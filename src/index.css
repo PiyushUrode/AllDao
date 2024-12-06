@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  color: white;
+
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+body{
+  font-weight: 200;
+  src: url("../src/fonts/Quicksand/static/Quicksand-Regular.ttf");
+}
+
+/* font faces */
+/* quicksand font */
+@font-face{
+  font-family: "Quicksand";
+  src: url("../src/fonts/Quicksand/static/Quicksand-Light.ttf");
+  font-weight: 100;
+}
+@font-face{
+  font-family: "Quicksand";
+  src: url("../src/fonts/Quicksand/static/Quicksand-Regular.ttf");
+  font-weight: 200;
+}
+@font-face{
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand/static/Quicksand-Medium.ttf");
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Quicksand";
+  src: url("../src/fonts/Quicksand/static/Quicksand-SemiBold.ttf");
+  font-weight: 600;
+}
+
+/* K2D font */
+@font-face{
+  font-family: "K2D";
+  src: url("../src/fonts/K2D/K2D-Bold.ttf");
+  font-weight: 800;
+}
+@font-face{
+  font-family: "K2D";
+  src: url("../src/fonts/K2D/K2D-SemiBold.ttf");
+  font-weight: 600;
+}
