@@ -1,4 +1,6 @@
 import robot from "../../assets/RobotVideo.mp4"
+import robot2 from "../../assets/RobotVideo2.mp4"
+import robotdark from "../../assets/robotdark.gif"
 import tool1 from "../../assets/tool1.png"
 import tool2 from "../../assets/tool2.png"
 import tool3 from "../../assets/tool3.png"
@@ -22,9 +24,27 @@ const ToolsToken = () => {
           </div>
 
           <div className="flex items-center gap-5 mt-20 justify-between">
-            <div className="md:w-[40%] hidden md:block">
-              <video src={robot} autoPlay loop muted className=" transform scale-x-[-1] w-full " ></video>
-            </div>
+          <div className="md:w-[40%] hidden md:block">
+  {/* Video for light mode */}
+  <video
+    src={robot}
+    autoPlay
+    loop
+    muted
+    className="transform scale-x-[-1] w-full dark:hidden"
+  ></video>
+
+<video
+    src={robot2}
+    autoPlay
+    loop
+    muted
+    className="transform scale-x-[-1] w-full hidden dark:block"
+  ></video>
+  
+
+</div>
+
             <div className="flex w-full md:w-[80%] flex-col justify-between gap-5 ">
               <div className="flex flex-col w-full md:flex-row justify-center gap-5 items-center">
               <div className="border w-full md:w-1/2 border-[#1ec600fa] shadow-md shadow-[#1fc600] bg-[#1d1d1d] dark:bg-[#fafafa] py-10 px-5 flex flex-col items-center rounded-2xl gap-5 ">
@@ -98,8 +118,24 @@ const ToolsToken = () => {
               </div>
             </div>
             <div className="md:w-[40%] hidden md:block">
-              <video src={robot} autoPlay loop muted className=" w-full " ></video>
-            </div>
+  {/* Video for light mode */}
+  <video
+    src={robot}
+    autoPlay
+    loop
+    muted
+    className="transform scale-x-[-1] w-full dark:hidden"
+  ></video>
+  
+  {/* GIF for dark mode */}
+  <video
+    src={robot2}
+    autoPlay
+    loop
+    muted
+    className="transform scale-x-[-1] w-full hidden dark:block"
+  ></video>
+</div>
           </div>
         </div>
       </div>

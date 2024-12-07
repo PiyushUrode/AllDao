@@ -113,7 +113,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("launchpad")}
       onMouseEnter={() => handleMouseEnter("launchpad")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-10 justify-between group"
     >
       <GoRocket className="h-7 w-7" />
       <span>Launchpad</span>
@@ -237,7 +237,7 @@ useEffect(() => {
 
           {/* pinklock button */}
           <div
-    className="hover:bg-[#ffffff1c] py-2"
+    className="hover:bg-[#ffffff1c] py-2 "
     onMouseEnter={() => setHovered(true)} // Set hover state to true
     onMouseLeave={() => setHovered(false)} // Set hover state to false
   >
@@ -249,7 +249,7 @@ useEffect(() => {
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
       className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
     >
-      <MdOutlineLock className="h-7 w-7" />
+      <MdSecurity className="h-7 w-7" />
       <span>AllDao Lock</span>
       <FaAngleRight />
     </button>

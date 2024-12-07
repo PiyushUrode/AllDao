@@ -115,14 +115,16 @@ const SliderBox = () => {
 
 {/* slider change */}
         {/* <div className="bg-black py-8 px-4"> */}
-        <div className="mt-20 rounded-lg py-5 px-10    bg-[#1d1d1d] dark:bg-[#b5f8ad] border border-[#1ec6004b] ">
-          <Slider {...settings}>
+        <div className="mt-20 rounded-xl py-5 px-6     bg-[#1d1d1d] dark:bg-[#b5f8ad] border border-[#1ec600d1] ">
+          <Slider {...settings}
+          className="flex  flex-row mx-5"
+          >
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="bg-[#000000] flex gap-6  dark:bg-[#fbf7f7]  border border-[#1fc600] rounded-2xl "
+                className="bg-[#000000]    dark:bg-[#fbf7f7]   border border-[#1fc600] rounded-2xl "
               >
-                <div className="flex flex-row gap-10 items-stretch py-2 px-4">
+                <div className="flex flex-row gap-10 items-stretch  py-2 px-5">
                   {/* <div className=""> */}
                     <img
                       src={card.img}

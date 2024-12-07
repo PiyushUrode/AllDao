@@ -35,7 +35,7 @@ const Navbar = ({ toggleSidebar }) => {
       </button> */}
 
       {/* toglle button start*/}
-      <div >
+      <div className="">
         <ToggleButton/>
       </div>
       {/* toglle button end*/}
