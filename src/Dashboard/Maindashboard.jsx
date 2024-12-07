@@ -18,7 +18,7 @@ const MainDashboard = () => {
         <Navbar toggleSidebar={toggleSidebar} />
       </div>
 
-      <div className="flex flex-1 p-0 pt-16 bg-black dark:bg-[#f0fff0] ">
+      <div className="flex flex-1 p-0 pt-16 bg-black  dark:bg-[#f0fff0] ">
         {/* Sidebar */}
         <aside
           className={`fixed top-0 left-0 h-screen  z-50  transform ${

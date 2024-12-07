@@ -6,19 +6,20 @@ import { useTheme } from '../context/ThemeContext';
 const Navbar = ({ toggleSidebar }) => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="flex md:items-stretch items-center  justify-between md:px-10  md:ps-24 gap-2  p-2  ">
+    <div className="flex md:items-stretch items-center  justify-between md:px-10  md:ps-80 gap-2  p-2  ">
       <div className="sm:hidden ">
         {" "}
         <img src={logo} alt="" className="h-8" />{" "}
       </div>
-      <div className="sm:flex sm:items-center px-0 hidden sm:block sm:px-2 rounded-3xl   border-[#1fc600] border-2 gap-2 sm:w-[40%] md:w-[50%]">
-        <HiOutlineSearch className="text-2xl  " />
-        <input
-          type="text"
-          placeholder="Type token Symbol, address to find your launchpad"
-          className=" bg-black dark:bg-white placeholder-[#eeededf1] dark:placeholder-[#202020f1] "
-        />
-      </div>
+      <div className="sm:flex sm:items-center px-0 hidden sm:block sm:px-2 rounded-3xl border-[#1fc600] border-2 gap-2 sm:w-[40%] md:w-[50%]">
+  <HiOutlineSearch className="text-2xl" />
+  <input
+    type="text"
+    placeholder="Type token Symbol, address to find your launchpad"
+    className="w-full bg-black dark:bg-white text-sm sm:text-base md:text-lg placeholder-[#eeededf1] dark:placeholder-[#202020f1] placeholder-opacity-80 px-2 py-1"
+  />
+</div>
+
       <div className="flex items-center sm:items-stretch gap-2 md:gap-5 ">
         <button className="flex flex-row hidden sm:block font-semibold font-quicksand items-center p-1 px-5 md:px-5 border border-[#fdd717] shadow-sm shadow-[#fdd717] rounded dark:text-black">
           <span className=""> Rewards</span>

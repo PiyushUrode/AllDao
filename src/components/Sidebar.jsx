@@ -83,7 +83,7 @@ useEffect(() => {
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 md:translate-x-0 md:relative overflow-y-scroll scrollbar  `}
     >
-      <div className="flex flex-col ">
+      <div className="flex flex-col w-fit ">
         {/* <div className="flex items-center px-4 py-4 gap-2"> */}
           {/* <img src={logo} alt="logo" className="h-12 w-12" /> */}
           {/* <div className="text-xl" href=""> */}
@@ -113,7 +113,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("launchpad")}
       onMouseEnter={() => handleMouseEnter("launchpad")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-10 justify-between group"
+      className="hover:text-[#1fc600] w-[100%] justify-between   px-4 text-l flex space-x-2 gap-10 justify-between group"
     >
       <GoRocket className="h-7 w-7" />
       <span>Launchpad</span>
@@ -171,10 +171,10 @@ useEffect(() => {
       onClick={() => toggleDropdown("pinkMeme")}
       onMouseEnter={() => handleMouseEnter("pinkMeme")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600] w-[100%] justify-between  px-4 text-l flex space-x-2 gap-5 items-center group"
     >
       <TbGhost2 className="h-7 w-7" />
-      <span>AllDao meme</span>
+      <span>AllDao Meme</span>
       <FaAngleRight />
     </button>
 
@@ -209,7 +209,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("Tele-Airdrop-Bot")}
       onMouseEnter={() => handleMouseEnter("Tele-Airdrop-Bot")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600]  px-4 text-l w-[100%] justify-between flex space-x-2 gap-5  group"
     >
       <SiAirplayaudio className="h-7 w-7" />
       <span>TeleBot</span>
@@ -235,7 +235,7 @@ useEffect(() => {
     )}
   </div>
 
-          {/* pinklock button */}
+          {/* Alldaao lock button */}
           <div
     className="hover:bg-[#ffffff1c] py-2 "
     onMouseEnter={() => setHovered(true)} // Set hover state to true
@@ -247,7 +247,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("PinkLock")}
       onMouseEnter={() => handleMouseEnter("PinkLock")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600]  w-[100%] justify-between  px-4 text-l flex space-x-2 gap-5 items-center group"
     >
       <MdSecurity className="h-7 w-7" />
       <span>AllDao Lock</span>
@@ -290,7 +290,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("Airdrops")}
       onMouseEnter={() => handleMouseEnter("Airdrops")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600]  w-[100%] justify-between px-4 text-l flex space-x-2 gap-5 items-center group"
     >
       <GiAirBalloon className="h-7 w-7" />
       <span>Airdrops</span>
@@ -327,7 +327,7 @@ useEffect(() => {
       onClick={() => toggleDropdown("Token")}
       onMouseEnter={() => handleMouseEnter("Token")} // Show dropdown on mouse enter
       //      // onMouseLeave={handleMouseLeave} // // Hide dropdown on mouse leave
-      className="hover:text-[#1fc600]  px-4 text-l flex space-x-2 gap-5 items-center group"
+      className="hover:text-[#1fc600]  w-[100%] justify-between px-4 text-l flex space-x-2 gap-5 items-center group"
     >
       <MdOutlineGeneratingTokens className="h-7 w-7" />
       <span>Token</span>
