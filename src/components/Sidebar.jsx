@@ -32,7 +32,8 @@ import { useNavigate } from 'react-router-dom';
 
 import logo from "../assets/alldao-text.png"
 import slogo from "../assets/top-logo.png"
-
+import whitelogo from "../assets/whitelogo4.png"
+import whitelogo2 from "../assets/whitelogo3.png"
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 
 const navigate = useNavigate();
@@ -81,8 +82,9 @@ useEffect(() => {
     <div ref={sidebarRef}
       className={`fixed top-0 left-0 pl-2 slider max-h-screen overflow-x-hidden h-full  bg-black dark:bg-[#b5f8ad]  text-white dark:text-black font-semibold  transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 md:translate-x-0 md:relative overflow-y-scroll scrollbar  `}
+      } transition-transform duration-300 md:translate-x-0 md:relative  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-800 scrollbar-track-transparent   `}
     >
+      {/* overflow-y-scroll scrollbar */}
       <div className="flex flex-col w-fit ">
         {/* <div className="flex items-center px-4 py-4 gap-2"> */}
           {/* <img src={logo} alt="logo" className="h-12 w-12" /> */}
@@ -93,8 +95,10 @@ useEffect(() => {
           
           <div className="flex items-center justify-between px-1 py-2">
         <div className="text-3xl flex items-center font-bold gap-7 text-[#1fc600] cursor-pointer" onClick={() => navigate('/')}> 
-          <img src={slogo} className="  h-8 w-8" alt="" /> 
-        <img src={logo} className="w-24 " alt="" />
+          <img src={slogo} className="  h-8 w-8 dark:hidden" alt="" /> 
+          <img src={whitelogo} className="  h-8 w-8 hidden dark:block" alt="" /> 
+        <img src={logo} className="w-24 dark:hidden " alt="" />
+        <img src={whitelogo2} className="w-24 hidden dark:block " alt="" />
         </div>
         <button className="md:hidden text-xl" onClick={toggleSidebar}>
           ✕

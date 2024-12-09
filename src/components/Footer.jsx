@@ -1,5 +1,6 @@
 
 import logo from "../assets/alldao_logodark.png"
+import logo2 from "../assets/whitelogo1.png"
 // import telegram from '../../assets/socialmedia/telegram.svg';
 // import instagram from '../../assets/socialmedia/instagram.svg';
 // import facebook from '../../assets/socialmedia/facebook.svg';
@@ -18,7 +19,8 @@ function Footer() {
       {/* Column One */}
       <div className="flex-1 min-w-[200px] space-y-2">
         <div className="flex items-center gap-2">
-        <img className="w-[70%]" src={logo} alt="Logo" />
+        <img className="w-[70%] dark:hidden" src={logo} alt="Logo" />
+        <img className="w-[70%] hidden dark:block" src={logo2} alt="Logo" />
         </div>
         <p className="font-medium py-5">
           PinkSale helps everyone to create their own tokens and token sales in a few seconds.

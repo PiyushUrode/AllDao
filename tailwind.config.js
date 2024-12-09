@@ -92,6 +92,21 @@ export default {
         'text-gradient-3': 'linear-gradient(to right, #22dd01, #0066cc)', // Bright Green to Royal Blue
     
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite', // Slow spin animation
+      },
+
+      animation: {
+        'border-color-pulse': 'borderColorPulse 2s ease-in-out infinite',
+      },
+      keyframes: {
+        borderColorPulse: {
+          '0%': { borderColor: '#28a745' },  // Green
+          '50%': { borderColor: '#ADFF2F' }, // Blue
+          '100%': { borderColor: '#32CD32' }, // Dark Green
+        },
+      },
+
 
 
 
