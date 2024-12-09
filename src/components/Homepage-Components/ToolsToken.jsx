@@ -1,5 +1,5 @@
 import robot from "../../assets/RobotVideo.mp4"
-import robot2 from "../../assets/RobotVideo2.mp4"
+import robot2 from "../../assets/Robotvideo2.mp4"
 // import robotdark from "../../assets/robotdark.gif"
 import tool1 from "../../assets/tool1.png"
 import tool2 from "../../assets/tool2.png"
