@@ -9,7 +9,7 @@ import tool5 from "../../assets/tool5.png"
 import tool6 from "../../assets/tool6.png"
 import tool7 from "../../assets/tool7.png"
 import tool8 from "../../assets/tool8.png"
-import "../../../src/app.css"
+import "../Tooltoken.css"
 const ToolsToken = () => {
   return (
     <>
